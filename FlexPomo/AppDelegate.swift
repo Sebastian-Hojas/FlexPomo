@@ -8,13 +8,19 @@
 
 import Cocoa
 
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 
+    @IBOutlet weak var statusMenu: NSMenu!
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        
+        statusItem.title = "Menu"
+        statusItem.menu = statusMenu
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
