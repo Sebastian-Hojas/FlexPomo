@@ -1,5 +1,7 @@
 > For a life full of surprises.
 
+![demo](docu/01_demo.gif)
+
 I am a big fan of the [Pomodoro technique](https://en.wikipedia.org/wiki/Pomodoro_Technique), but always struggled to apply its rigid format to my work as a programmer. This it the attempt to write a flexible & minimalistic Pomodoro timer.
 
 Intervals and breaks can be started and ended by the user:
