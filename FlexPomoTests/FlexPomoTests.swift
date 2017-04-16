@@ -21,16 +21,11 @@ class FlexPomoTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPomo() {
+        let start = Date(timeIntervalSinceNow: -2)
+        let end = Date(timeIntervalSinceNow: 60)
+        XCTAssert(FinishedPomo(start: start, end: end).description == "01:02")
+        XCTAssert(ActivePomo(start: start).description == "00:02")
+        XCTAssert(ActivePomo(start: nil).description == "00:00")
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
